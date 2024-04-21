@@ -4,10 +4,60 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
+.ProfileLogo{
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 50px;
+  margin-left:48px;
+}
 header {
-  position: sticky;
-  top: 0;
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #8f8f8f;
+  height: 112px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Menu {
+  background-color: #8f8f8f;
+  width: 267px;
+  height: 301px;
+  float: right;
+  border-radius: 5px;
+  margin-top: 280px;
+}
+
+#Menu_logo > img {
+  float: right;
+  width: 75px;
+  height: 50px;
+  border-radius: 5px;
+
+  margin-right: 6px;
+}
+.displayNone {
+  display: none;
+}
+.Menu_button {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  border-radius: 18px;
+}
+
+.Menu > .Menu_button > .btm {
+  display: flex;
+  margin-top: 20px;
+  width: 97%;
+  border-radius: 0px;
+  padding: 21px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
 }
 
 .nav {
@@ -19,12 +69,25 @@ header {
   border-bottom-right-radius: 10px;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
+  display: none;
 }
-
+.slider0 {
+  display: none;
+}
+.active {
+  display: block;
+}
+.HomeBase {
+  width: 285px;
+  height: 300px;
+  border-radius: 100px;
+  margin-left: 71px;
+}
 .left-nav > img {
   border-radius: 20px;
   width: 40px;
-  height: 40px;
+  height: 35px;
 }
 
 .left-nav {
@@ -37,23 +100,32 @@ header {
 }
 
 body {
-  background-color: rgb(0, 0, 0);
   color: #fff;
   /* background-image: url("./image/bgrd.avif") */
   background-color: rgb(157, 148, 148);
 }
 
-.profile {
+.slider0 {
   display: flex;
   border-bottom: 3px solid black;
-  height: 500px;
+  height: 515px;
   color: rgb(0, 0, 0);
   align-items: center;
-
+  flex-wrap: wrap;
+  min-width: 645;
   justify-content: center;
   /* background-image:url(./image/backgroundimg.jpg); */
 }
 
+.child-slider01 {
+  height: 400px;
+  width: 400px;
+
+  background-color: white;
+  background-image: url(https://source.unsplash.com/random);
+  display: flex;
+  align-items: flex-end;
+}
 .btm {
   width: 100px;
   height: 35px;
@@ -97,10 +169,6 @@ body {
   text-align: center;
 }
 
-.boxes:hover {
-  background-color: rgb(222, 0, 0);
-}
-
 .enlarged-image {
   max-width: 80%;
   max-height: 80%;
@@ -137,7 +205,7 @@ body {
     } */
 
 button.btm:active {
-  background-color: cadetblue;
+  background-color: rgba(199, 36, 36, 0.154);
 }
 
 /* .zoomedimage::after{
