@@ -13,11 +13,28 @@ Event("Contact.html", "btm2");
 Event("AboutMe.html", "btm3");
 Event("Interested.html", "btm4");
 
-function change() {
-  let element = document.querySelector(".boxes");
+var menuElements = document.getElementsByClassName("Menu");
 
-  element.addEventListener("click", () => {
-    element.classList.toggle("zoomedimage");
-  });
+for (var i = 0; i < menuElements.length; i++) {
+  menuElements[i].style.display = "none";
 }
-change();
+
+function menulogo() {
+  var newDiv = document.getElementById("Menu_logo");
+
+  if (newDiv) {
+    newDiv.style.display = "none";
+    return `logoIsRemoved`;
+  }
+}
+
+function Menu() {
+  btm = document.getElementsByClassName("Menu");
+  if (menulogo() === "logoIsRemoved") {
+    for (var i = 0; i < menuElements.length; i++) {
+      menuElements[i].style.display = "block";
+    }
+  }
+}
+
+
