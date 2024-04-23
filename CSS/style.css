@@ -230,6 +230,10 @@ body {
     width: 150px;
     height: auto;
   }
+  .navigation_auto{
+  margin-top: -50px;
+  width:700px;
+  }
   #Menu_logo > img {
     width: 171px;
     height: 100px;
