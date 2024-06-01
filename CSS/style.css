@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color:black;
+  color: black;
   font-family: sans-serif;
 }
 .ProfileLogo {
@@ -44,17 +44,16 @@ header {
   border-radius: 50%;
 }
 
-
-/* .Menu {
+.Menu {
   background-color: #8d6666;
   width: 267px;
   height: 301px;
   float: right;
   border-radius: 5px;
   margin-top: 280px;
-} */
+}
 
-/* #Menu_logo > img {
+#Menu_logo > img {
   float: right;
   width: 75px;
   height: 50px;
@@ -62,20 +61,22 @@ header {
   background-color: none;
 
   margin-right: 6px;
-} */
-
+}
+#Menu_logo {
+  display: none;
+}
 .displayNone {
   display: none;
 }
-/* .Menu_button {
+.Menu_button {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
   border-radius: 18px;
-} */
+}
 
-/* .Menu > .Menu_button > .btm {
+.Menu > .Menu_button > .btm {
   display: flex;
   margin-top: 20px;
   width: 97%;
@@ -84,7 +85,7 @@ header {
   align-items: center;
   justify-content: center;
   border-radius: 7px;
-} */
+}
 
 .slider0 {
   display: none;
@@ -98,11 +99,17 @@ body {
   /* background-image: url("./image/bgrd.avif") */
   background-color: rgb(255, 255, 255);
 }
-
+.headSpan {
+  display: block;
+  width: 447px;
+  display: block;
+  margin-left: 57px;
+  flex: 0 1 auto; 
+}
 /* slider work */
 .slider0 {
   display: flex;
-padding:70px;
+  padding: 70px;
   height: auto;
   color: rgb(0, 0, 0);
   align-items: center;
@@ -215,10 +222,20 @@ padding:70px;
   background-color: rgb(255, 255, 255);
   border-radius: 9px;
 }
+/* media query to make responsive display-------------------------------------------------------- */
 @media screen and (max-width: 1100px) {
   Header {
     width: 100%;
     height: 200px;
+  }
+  .Menu {
+    background-color: transparent;
+  }
+  .HeadIntro > span {
+    width: auto;
+  }
+  .navButton {
+    display: none;
   }
   .ProfileLogo > img {
     width: 150px;
@@ -227,6 +244,9 @@ padding:70px;
   .navigation_auto {
     margin-top: -30px;
     width: 700px;
+  }
+  #Menu_logo {
+    display: block;
   }
   #Menu_logo > img {
     width: 171px;
@@ -237,7 +257,9 @@ padding:70px;
     height: 850px;
     width: 500%;
   }
-
+  .handles {
+    height: 20px;
+  }
   .slide {
     width: 20%;
     transition: 0.5s;
@@ -268,11 +290,11 @@ padding:70px;
     width: 555px;
     height: auto;
     border: none;
-    background-color: rgb(157, 148, 148);
+
     border-radius: 9px;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 10px;
     margin-top: 10px;
   }
@@ -289,7 +311,6 @@ padding:70px;
     padding: 10px 0;
     text-align: center;
     font-size: 40px;
-    
   }
   .slider0 {
     display: flex;
@@ -298,10 +319,15 @@ padding:70px;
 }
 
 .btm:hover {
-  background-color: transparent;
+  background-color: red;
   color: rgb(25, 204, 174);
 }
-
+.btm {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: larger;
+}
 #image1 {
   width: 50px;
   height: 50px;
@@ -325,14 +351,12 @@ padding:70px;
   align-items: baseline;
   padding: 15px;
   color: black;
-  position: static;
-  bottom: 0;
 }
 
 .socialLink2 {
   padding: 10px 0;
   text-align: center;
-  color:black
+  color: black;
 }
 
 button.btm:active {
