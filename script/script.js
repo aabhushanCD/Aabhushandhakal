@@ -1,13 +1,7 @@
 let btm;
-
-
-
 var menuElements = document.getElementsByClassName("Menu");
-
-
 function menulogo() {
   var newDiv = document.getElementById("Menu_logo");
-
   if (newDiv) {
     newDiv.style.display = "none";
     return `logoIsRemoved`;
@@ -25,11 +19,11 @@ function Menu() {
 
 // slider js
 
-var counter = 1;
-setInterval(() => {
-  document.getElementById("radio" + counter).checked = true;
-  counter++;
-  if (counter > 4) {
-    counter = 1;
-  }
-}, 2000);
+// var counter = 1;
+// setInterval(() => {
+//   document.getElementById("radio" + counter).checked = true;
+//   counter++;
+//   if (counter > 4) {
+//     counter = 1;
+//   }
+// }, 2000);
