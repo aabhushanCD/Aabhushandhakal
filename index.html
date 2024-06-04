@@ -16,7 +16,7 @@
 
 <body>
   <header>
-    <div class="ProfileLogo">
+    <div class="ProfileLogo" id="main">
       <img src="./image/Brand/amonkBlackTransp.png" width="80px;" />
     </div>
 
@@ -27,18 +27,21 @@
     <!--For mobile view -->
     <div class="Menu" style="display: none">
       <div class="Menu_button">
-        <button id="btm3" class="btm">About</button>
-        <button id="btm4" class="btm">Experience</button>
-        <button id="btm1" class="btm">Project</button>
-        <button id="btm2" class="btm">Contact</button>
+        <button id="btm3" class="btm" onclick="document.getElementById('about').scrollIntoView()">About</button>
+        <button id="btm4" class="btm" onclick="document.getElementById('sushi').scrollIntoView()">Experience</button>
+        <button id="btm1" class="btm" onclick="location.href='./#project'">Project</button>
+        <button id="btm2" class="btm" onclick="location.href='./#contact'">Contact</button>
       </div>
     </div>
     <!--For mobile view menu buttom end-->
     <div class="navButton">
-      <button id="btm3" class="button btm">About</button>
-      <button id="btm4" class="button btm">Experience</button>
-      <button id="btm1" class="button btm">Project</button>
-      <button id="btm2" class="button btm">Contact</button>
+      <button id="btm3" class="button btm" onclick="document.getElementById('about').scrollIntoView()">About</button>
+      <button id="btm4" class="button btm"
+        onclick="document.getElementById('experience').scrollIntoView()">Experience</button>
+      <button id="btm1" class="button btm"
+        onclick="document.getElementById('project').scrollIntoView()">Project</button>
+      <button id="btm2" class="button btm"
+        onclick="document.getElementById('contact').scrollIntoView()">Contact</button>
     </div>
   </header>
 
@@ -103,7 +106,7 @@
     <!--End home info-->
   </div>
   <!--Start of About Me Section-->
-  <div class="aboutMe">
+  <section class="aboutMe" id="about">
     <h2 style="display:block; text-align:center;  width: 100%;">About Me</h2>
     <div class="aboutMe_">
       <div class="aboutMe_profile">
@@ -164,19 +167,116 @@
 
     </div>
 
-    </div>
-  
+  </section>
 
-  <div>
-    <h2 style="text-align: center;">Experience</h2>
-    <div>
-      <div class="aboutMe_1 experienceSection">
-        <div class="aboutMe__2 experienceSection_1"></div>
-        <div class="aboutMe__2 experienceSection_2"></div>
+  <!--Experience SEction Start-->>
+  <section id="experience">
+    <h1 style="text-align: center;">Experience</h1>
+    <div class="ExperienceDiv">
+      <div class="experienceDiv1">
+        <div class="experienceTitle">
+          FrontEndDeveloper
+        </div>
+        <div class="articleContainer">
+          <article>
+            <img src="./icons/checkmark.png" alt="" width="32px" height="32px">
+            <div>
+              <h3>Html</h3>
+              <p style="color: #555555;">Experience</p>
+            </div>
+          </article>
+          <article>
+            <img src="./icons/checkmark.png" alt="" width="32px" height="32px">
+            <div class="article-Container">
+              <h3>Css</h3>
+              <p style="color: #555555;">Experience</p>
+            </div>
+          </article>
+          <article>
+            <img src="./icons/checkmark.png" alt="" width="32px" height="32px">
+            <div class="article-Container">
+              <h3>JavaScript</h3>
+              <p style="color: #555555;">Experience</p>
+            </div>
+          </article>
+          <article>
+            <img src="./icons/checkmark.png" alt="" width="32px" height="32px">
+            <div class="article-Container">
+              <h3>ReactJs</h3>
+              <p style="color: #555555;">Experience</p>
+            </div>
+          </article>
+          <article>
+            <img src="./icons/checkmark.png" alt="" width="32px" height="32px">
+            <div class="article-Container">
+              <h3>Css-BootStrap</h3>
+              <p style="color: #555555;">Experience</p>
+            </div>
+          </article>
+          <article>
+            <img src="./icons/checkmark.png" alt="" width="32px" height="32px">
+            <div class="article-Container">
+              <h3>Tailwind & Material</h3>
+              <p style="color: #555555;">intermediate</p>
+            </div>
+          </article>
+        </div>
       </div>
+      <div class="experienceDiv1">
+        <div class="experienceTitle">
+          BackEndDeveloper
+        </div>
+        <div class="articleContainer">
+          <article>
+            <img src="./icons/checkmark.png" alt="" width="32px" height="32px">
+            <div>
+              <h3>Nodejs</h3>
+              <p style="color: #555555;">Experience</p>
+            </div>
+          </article>
+          <article>
+            <img src="./icons/checkmark.png" alt="" width="32px" height="32px">
+            <div class="article-Container">
+              <h3>Express</h3>
+              <p style="color: #555555;">Experience</p>
+            </div>
+          </article>
+          <article>
+            <img src="./icons/checkmark.png" alt="" width="32px" height="32px">
+            <div class="article-Container">
+              <h3>MongoDb</h3>
+              <p style="color: #555555;">Experience</p>
+            </div>
+          </article>
+          <article>
+            <img src="./icons/checkmark.png" alt="" width="32px" height="32px">
+            <div class="article-Container">
+              <h3>Jwt</h3>
+              <p style="color: #555555;">Experience</p>
+            </div>
+          </article>
+          <article>
+            <img src="./icons/checkmark.png" alt="" width="32px" height="32px">
+            <div class="article-Container">
+              <h3>Cloudinary</h3>
+              <p style="color: #555555;">Experience</p>
+            </div>
+          </article>
+          <article>
+            <img src="./icons/checkmark.png" alt="" width="32px" height="32px">
+            <div class="article-Container">
+              <h3>Validation</h3>
+              <p style="color: #555555;">Experience</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
     </div>
-  </div>
-  <div class="project">
+  </section>
+
+  <!-- Project section -->
+  <!-- <div class="project">
     <div class=" projectSection">
       <div class="experienceSection_1"></div>
       <div class="experienceSection_2"></div>
@@ -186,8 +286,13 @@
       <div class="experienceSection_2"></div>
     </div>
 
-  </div>
+  </div> -->
   <!--End  of About me Section-->
+  <div class="scrollBtm">
+    <img src="./icons/Upbotton.png" width="32px" height="32px" alt=""
+      onclick="document.getElementById('main').scrollIntoView()">
+
+  </div>
   <div class="socialLink2">
     <span class="socialLink2">&copy; 2024 Aabhushan | All Rights Reserved</span>
   </div>
