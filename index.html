@@ -27,10 +27,14 @@
     <!--For mobile view -->
     <div class="Menu" style="display: none">
       <div class="Menu_button">
-        <button id="btm3" class="btm" onclick="document.getElementById('about').scrollIntoView()">About</button>
-        <button id="btm4" class="btm" onclick="document.getElementById('experience').scrollIntoView()">Experience</button>
-        <button id="btm1" class="btm" onclick="document.getElementById('project').scrollIntoView()">Project</button>
-        <button id="btm2" class="btm" onclick="document.getElementById('contact').scrollIntoView()">Contact</button>
+        <button id="btm3" class="btm"
+          onclick="document.getElementById('about').scrollIntoView(); remove_menu();">About</button>
+        <button id="btm4" class="btm"
+          onclick="document.getElementById('experience').scrollIntoView(); remove_menu()">Experience</button>
+        <button id="btm1" class="btm"
+          onclick="document.getElementById('project').scrollIntoView(); remove_menu()">Project</button>
+        <button id="btm2" class="btm"
+          onclick="document.getElementById('contact').scrollIntoView(); remove_menu()">Contact</button>
       </div>
     </div>
     <!--For mobile view menu buttom end-->
@@ -47,7 +51,7 @@
 
   <div class="slider0">
     <div class="profilePicture">
-      <img src="./personelImage/meditationMusic.jpg" alt="ProfileImage" width="300px" height="300px"
+      <img src="./personelImage/meditationMusic.jpg" alt="ProfileImage" width="400px" height="400px"
         style="border-radius: 50%" />
     </div>
 
@@ -275,19 +279,95 @@
     </div>
   </section>
 
-  <!-- Project section -->
-  <!-- <div class="project">
-    <div class=" projectSection">
-      <div class="experienceSection_1"></div>
-      <div class="experienceSection_2"></div>
-      <div class="experienceSection_1"></div>
-      <div class="experienceSection_2"></div>
-      <div class="experienceSection_1"></div>
-      <div class="experienceSection_2"></div>
+  <section id="project">
+
+    <h1 style="text-align: center;">Project</h1>
+    <div class="projectContainer">
+      <div class="projectdiv">
+        <img src="./image/todoApp.jpeg" alt="" class="projectImg">
+        <div class="buttonSection">
+          <h3 style="text-align: center;">Todo-App</h3>
+          <!-- <button class="projectBtm">GitHub</button>
+    <button class="projectBtm">LiveDemo</button> -->
+          <div style="margin-top: 20px;">
+            <a href="https://github.com/aabhushanCD/Javascript-projects-and-learning-materials/tree/main/Todo%20app%20project"
+              class="projectBtm" target="_blank">GitHub</a>
+            <a href="" class="projectBtm">LiveDemo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="projectdiv">
+        <img src="./image/cat.webp" alt="" class="projectImg">
+        <div class="buttonSection">
+          <h3 style="text-align: center;">E-commerce</h3>
+          <!-- <button class="projectBtm">GitHub</button>
+    <button class="projectBtm">LiveDemo</button> -->
+          <div style="margin-top: 20px;">
+            <a href="" class="projectBtm">GitHub</a>
+            <a href="" class="projectBtm">LiveDemo</a>
+          </div>
+        </div>
+      </div>
+      <div class="projectdiv">
+        <img src="./image/cat.webp" alt="" class="projectImg">
+        <div class="buttonSection">
+          <h3 style="text-align: center;">E-commerce</h3>
+          <!-- <button class="projectBtm">GitHub</button>
+    <button class="projectBtm">LiveDemo</button> -->
+          <div style="margin-top: 20px;">
+            <a href="" class="projectBtm">GitHub</a>
+            <a href="" class="projectBtm">LiveDemo</a>
+          </div>
+        </div>
+      </div>
+      <div class="projectdiv">
+        <img src="./image/cat.webp" alt="" class="projectImg">
+        <div class="buttonSection">
+          <h3 style="text-align: center;">E-commerce</h3>
+          <!-- <button class="projectBtm">GitHub</button>
+    <button class="projectBtm">LiveDemo</button> -->
+          <div style="margin-top: 20px;">
+            <a href="" class="projectBtm">GitHub</a>
+            <a href="" class="projectBtm">LiveDemo</a>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-  </div> -->
-  <!--End  of About me Section-->
+  </section>
+  <section id="contact">
+    <div class="contact-section">
+      <h2>Contact Me</h2>
+      <form action="your-form-handler.php" method="post">
+        <table class="contact-table">
+          <tr>
+            <th><label for="name">Name:</label></th>
+            <td><input type="text" id="name" name="name" required></td>
+          </tr>
+          <tr>
+            <th><label for="email">Email:</label></th>
+            <td><input type="email" id="email" name="email" required></td>
+          </tr>
+          <tr>
+            <th><label for="phone">Phone:</label></th>
+            <td><input type="tel" id="phone" name="phone"></td>
+          </tr>
+          <tr>
+            <th><label for="message">Message:</label></th>
+            <td><textarea id="message" name="message" rows="4" required></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align:center;">
+              <button type="submit">Submit</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </section>
+
   <div class="scrollBtm">
     <img src="./icons/Upbotton.png" width="32px" height="32px" alt=""
       onclick="document.getElementById('main').scrollIntoView()">

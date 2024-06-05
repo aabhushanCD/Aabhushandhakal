@@ -15,6 +15,7 @@ header {
   display: flex;
   position: relative;
   width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   height: 5rem;
   justify-content: space-around;
@@ -81,13 +82,13 @@ header {
 }
 /* About me section all CSS Here  Start*/
 
-.aboutMe{
-  margin-top:40px;
+.aboutMe {
+  margin-top: 40px;
 }
 .aboutMe_ {
   display: flex;
-  margin-top: 40px;;
-  margin-bottom:30px;
+  margin-top: 40px;
+  margin-bottom: 30px;
   justify-content: center;
   width: 100%;
   /* border: 1px solid black; */
@@ -110,7 +111,7 @@ header {
   margin-left: 20px;
   align-items: center;
 }
-.short-text{
+.short-text {
   color: rgb(85, 85, 85);
 }
 .about-detail {
@@ -172,21 +173,20 @@ header {
     margin: 10px 0;
     min-width: 200px;
   }
-
 }
 
 /* About me section all CSS Here  End*/
 
 /* Experience Section start */
-.ExperienceDiv{
+.ExperienceDiv {
   display: flex;
-  gap:15px;
+  gap: 15px;
   justify-content: center;
   text-align: center;
-  padding:40px;
+  padding: 40px;
 }
 
-.experienceDiv1{
+.experienceDiv1 {
   width: 425px;
   padding: 15px;
   height: 340px;
@@ -194,14 +194,14 @@ header {
   border-radius: 2rem;
 }
 
-.experienceTitle{
+.experienceTitle {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
-.articleContainer{
-  display:flex;
+.articleContainer {
+  display: flex;
   width: 400px;
   flex-wrap: wrap;
   gap: 2.5rem;
@@ -217,6 +217,104 @@ article {
 
 /* Experience Section end */
 
+/* Project Div start */
+.projectContainer {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.projectdiv {
+  padding: 24px;
+  width: 498;
+  height: 576px;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 2rem;
+}
+.projectImg {
+  width: 403px;
+  height: 403px;
+  border-radius: 2rem;
+}
+.buttonSection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projectBtm {
+  width: 100px;
+  height: 2rem;
+
+  text-decoration: none;
+
+  border: 1px solid rgb(163, 163, 163);
+  padding: 7px;
+  border-radius: 20px;
+}
+/* Project Div end */
+
+/* contact Section start */
+
+.contact-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 8px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact-table th,
+.contact-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-table th {
+  background-color: #f4f4f9;
+  width: 30%;
+}
+
+.contact-table td {
+  width: 70%;
+}
+
+.contact-table input,
+.contact-table textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-table button {
+  padding: 10px 20px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-table button:hover {
+  background-color: #155ab6;
+}
+
+/* contact Section end */
 .Menu_button {
   display: flex;
   flex-wrap: wrap;
@@ -266,92 +364,6 @@ body {
   justify-content: center;
 }
 
-.Slides {
-  display: flex;
-  height: 445px;
-  width: 500%;
-}
-.slider {
-  height: 445px;
-  width: 362px;
-  overflow: hidden;
-}
-.Slides input {
-  display: none;
-}
-.slide {
-  width: 20%;
-  transition: 0.5s;
-}
-.slide img {
-  width: 362px;
-  height: 445px;
-}
-
-.navigation_manual {
-  position: absolute;
-  width: 362px;
-  margin-top: -30px;
-  display: flex;
-  justify-content: center;
-}
-.manual-btn {
-  border: 2px solid rgb(108, 95, 95);
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-.manual-btn:not(:last-child) {
-  margin-right: 30px;
-}
-.manual-btn:hover {
-  background-color: #3498db;
-}
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-#radio2:checked ~ .first {
-  margin-left: -20%;
-}
-#radio3:checked ~ .first {
-  margin-left: -40%;
-}
-#radio4:checked ~ .first {
-  margin-left: -60%;
-}
-
-/* automatic slider */
-
-.navigation_auto {
-  position: absolute;
-  display: flex;
-  width: 362px;
-  justify-content: center;
-  margin-top: -30px;
-}
-.navigation_auto div {
-  border: 2px solid beige;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-.navigation_auto div:not(:last-child) {
-  margin-right: 30px;
-}
-
-#radio1:checked ~ .navigation_auto .auto_btn1 {
-  background: beige;
-}
-#radio2:checked ~ .navigation_auto .auto_btn2 {
-  background: beige;
-}
-#radio2:checked ~ .navigation_auto .auto_btn3 {
-  background: beige;
-}
-#radio4:checked ~ .navigation_auto .auto_btn4 {
-  background: beige;
-}
 .btm {
   width: 100px;
   height: 35px;
@@ -368,8 +380,9 @@ body {
   height: 200px;
   border: none;
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   border-radius: 9px;
+  margin-left: 50px;
 }
 /* media query to make responsive display-------------------------------------------------------- */
 @media screen and (max-width: 1100px) {
@@ -414,39 +427,7 @@ body {
     width: 171px;
     height: 100px;
   }
-  .Slides {
-    display: flex;
-    height: 850px;
-    width: 500%;
-  }
-  .handles {
-    height: 20px;
-  }
-  .slide {
-    width: 20%;
-    transition: 0.5s;
-  }
-  .navigation_manual {
-    position: absolute;
-    width: 700px;
-    margin-top: -50px;
-  }
-  .navigation_auto div {
-    padding: 12px;
-    border-radius: 10px;
-  }
-  .manual-btn {
-    padding: 12px;
-    border-radius: 10px;
-  }
-  .slider {
-    width: 700px;
-    height: 850px;
-  }
-  .slide img {
-    width: 700px;
-    height: 850px;
-  }
+
   .child-slider02 {
     display: flex;
     width: 555px;
@@ -481,7 +462,6 @@ body {
 }
 
 .btm:hover {
-  background-color: red;
   color: rgb(25, 204, 174);
 }
 .btm {
@@ -522,18 +502,17 @@ body {
 }
 
 button.btm:active {
-  background-color: rgba(199, 36, 36, 0.154);
+  background-color: grey;
 }
 
-.scrollBtm{
-  
+.scrollBtm {
   justify-content: end;
-    display: flex;
-  position:sticky;
+  display: flex;
+  position: sticky;
   width: 100%;
-  bottom:0
+  bottom: 0;
 }
-.scrollBtm > img:hover{
-width: 50px;
-height: 50px;
+.scrollBtm > img:hover {
+  width: 50px;
+  height: 50px;
 }
