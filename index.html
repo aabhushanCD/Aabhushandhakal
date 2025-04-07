@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aabhushan Dhakal | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aabhushan Dhakal | Developer Portfolio</title>
+  <link rel="stylesheet" href="css/navbar.css" />
 </head>
-
 <body>
 
-  
-</body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Aabhushan</div>
+    <button class="menu-toggle">☰</button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Hello, I'm <span>Aabhushan Dhakal</span></h1>
+    <p>Frontend Developer | Tech Enthusiast</p>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate developer and tech content creator who loves to explore, build, and share tech knowledge through my work.</p>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">Project 1</div>
+      <div class="project-card">Project 2</div>
+      <div class="project-card">Project 3</div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Node.js</li>
+      <li>MongoDB</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Aabhushan Dhakal</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
