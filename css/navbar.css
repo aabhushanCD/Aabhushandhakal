@@ -13,6 +13,7 @@ body {
 
 .navbar {
   display: flex;
+  position: relative;
   justify-content: space-between;
   padding: 1rem;
   background: #000;
@@ -29,8 +30,11 @@ body {
 
 .nav-links {
   display: none;
+  position: absolute;
   list-style: none;
   gap: 1rem;
+  right: 0;
+  top:55px;
 }
 
 .nav-links li a {
