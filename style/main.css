@@ -1,8 +1,49 @@
-body {
+/* === Global Reset === */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-header {
-  display: flex;
+:root {
+  --dark: #222831;
+  --dark-gray: #393e46;
+  --teal: #00adb5;
+  --light: #eeeeee;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+button, a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ctaBtn {
+  background: var(--teal);
+  color: var(--light);
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.ctaBtn:hover {
+  background: var(--dark);
 }

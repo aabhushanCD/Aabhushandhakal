@@ -3,12 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aabhushan</title>
+    <title>Aabhushan | Portfolio</title>
+
+    <!-- Global + Section Styles -->
     <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/heroSection.css" />
+    <link rel="stylesheet" href="./style/about.css" />
+    <link rel="stylesheet" href="./style/projects.css" />
+    <link rel="stylesheet" href="./style/contact.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header>
-      <div class="profileLogo"><img src="" alt="profileLogo" /></div>
+      <div class="profileLogo">
+        <img src="./public/profileImage/1707048009249.jpeg" alt="profileLogo" />
+      </div>
+      <nav class="allLinkBtn">
+        <a href="#Hero">Home</a>
+        <a href="#About">About</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Contact">Contact</a>
+      </nav>
     </header>
+
+    <!-- HERO SECTION -->
+    <main>
+      <section id="Hero">
+        <div class="heroSection">
+          <div class="heroGraphics">
+            <div class="heroPhoto">
+              <img
+                src="./public/profileImage/whatshero.jpg"
+                alt="Hero"
+                href="/"
+              />
+            </div>
+          </div>
+          <div class="heroContent">
+            <h1>Hello, I’m <span>Aabhushan</span></h1>
+            <p>Web Developer | Designer | Tech Enthusiast</p>
+            <button class="ctaBtn">View My Work</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="About" class="about">
+        <div class="about-container">
+          <h2>About Me</h2>
+          <p class="intro">
+            Hi, I'm <span class="highlight">Aabhushan Dhakal</span> a passionate
+            <span class="highlight">Web Developer</span> skilled in both
+            frontend and backend development. I love building clean, modern, and
+            user-friendly websites.
+          </p>
+          <p>
+            With experience in
+            <span class="highlight">MERN-Stack</span> and
+            <span class="highlight">Different Programming Languages</span>
+            (c, c++, java, .Net, javascript, typescript etc), I enjoy solving
+            problems and turning ideas into reality.
+          </p>
+          <a href="#Projects" class="btn">View My Work</a>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <!-- PROJECTS SECTION -->
+      <section id="Projects">
+        <div class="projectsSection">
+          <h2>My Projects</h2>
+          <div class="projectCards">
+            <!-- Project 1 -->
+            <div class="projectCard">
+              <h3>E-Learning Platform</h3>
+              <p>
+                A modern web-based platform that allows students to enroll in
+                courses, track progress, take quizzes, and join discussions in
+                real-time. Built using the
+                <span class="highlight">MERN Stack</span> with collobration with
+                Aakash Shrestha. Final year project
+              </p>
+              <div class="projectLinks">
+                <a
+                  href="https://github.com/aakashstha1/fyp"
+                  target="_blank"
+                  class="btn"
+                  >GitHub</a
+                >
+                <a
+                  href="https://your-live-demo-link.com"
+                  target="_blank"
+                  class="btn secondary"
+                  >Preview</a
+                >
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="projectCard">
+              <h3>Social Media Platform</h3>
+              <p>
+                A feature-rich social networking app where users can
+                <span class="highlight">post, like, comment, and share</span>
+                content. Includes authentication, real-time updates, and a
+                responsive design.
+              </p>
+              <div class="projectLinks">
+                <a
+                  href="https://github.com/aabhushanCD/App"
+                  target="_blank"
+                  class="btn"
+                  >GitHub</a
+                >
+                <a
+                  href="https://your-live-demo-link.com"
+                  target="_blank"
+                  class="btn secondary"
+                  >Preview</a
+                >
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="projectCard">
+              <h3>Chatting App</h3>
+              <p>
+                A real-time chat application built with
+                <span class="highlight">MERN + Socket.io</span>. Users can send
+                instant messages, create chat rooms, and connect seamlessly with
+                friends.
+              </p>
+              <div class="projectLinks">
+                <a
+                  href="https://github.com/aabhushanCD/chatApp"
+                  target="_blank"
+                  class="btn"
+                  >GitHub</a
+                >
+                <a
+                  href="https://your-live-demo-link.com"
+                  target="_blank"
+                  class="btn secondary"
+                  >Preview</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="Contact">
+        <div class="contactSection">
+          <h2>Contact Me</h2>
+          <form type="submit">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="ctaBtn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Aabhushan. All rights reserved.</p>
+    </footer>
   </body>
 </html>

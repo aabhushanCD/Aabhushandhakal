@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 10%;
+  background: var(--dark);
+  color: var(--light);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.profileLogo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.allLinkBtn a {
+  color: var(--light);
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.allLinkBtn a:hover {
+  color: var(--teal);
+}
