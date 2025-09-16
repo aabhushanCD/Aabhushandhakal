@@ -52,7 +52,9 @@ a {
 .profileLogo a {
   display: flex;
 }
-
+.profileLogo a p {
+  display: none;
+}
 /* MOBILE RESPONSIVE STYLING */
 
 /* For tablets and mobile screens */
