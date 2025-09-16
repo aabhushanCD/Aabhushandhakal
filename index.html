@@ -23,8 +23,7 @@
             src="./public/profileImage/1707048009249.jpeg"
             alt="profileLogo"
           />
-          <p>Aabhushan</p></a
-        >
+        </a>
       </div>
       <nav class="allLinkBtn">
         <a href="#Hero" id="home">Home</a>
@@ -50,7 +49,12 @@
           <div class="heroContent">
             <h1>Hello, I’m <span>Aabhushan</span></h1>
             <p>Web Developer | Designer | Tech Enthusiast</p>
-            <button class="ctaBtn">View My Work</button>
+            <button
+              class="ctaBtn"
+              onclick="document.getElementById('Projects').scrollIntoView({ behavior: 'smooth' })"
+            >
+              View My Work
+            </button>
           </div>
         </div>
       </section>
