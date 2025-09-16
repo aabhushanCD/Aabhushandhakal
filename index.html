@@ -18,10 +18,16 @@
     <!-- HEADER -->
     <header>
       <div class="profileLogo">
-        <img src="./public/profileImage/1707048009249.jpeg" alt="profileLogo" />
+        <a href="#Hero">
+          <img
+            src="./public/profileImage/1707048009249.jpeg"
+            alt="profileLogo"
+          />
+          <p>Aabhushan</p></a
+        >
       </div>
       <nav class="allLinkBtn">
-        <a href="#Hero">Home</a>
+        <a href="#Hero" id="home">Home</a>
         <a href="#About">About</a>
         <a href="#Projects">Projects</a>
         <a href="#Contact">Contact</a>
@@ -159,10 +165,20 @@
       <section id="Contact">
         <div class="contactSection">
           <h2>Contact Me</h2>
-          <form type="submit">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+          <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
             <button type="submit" class="ctaBtn">Send Message</button>
           </form>
         </div>
@@ -173,5 +189,26 @@
     <footer>
       <p>© 2025 Aabhushan. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      emailjs.init("FNoVAFI6AGb_agWz5");
+
+      const form = document.getElementById("contactForm");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_xbanfhg", "template_mgv3mn9", this).then(
+          () => {
+            alert("Message sent successfully!");
+            form.reset();
+          },
+          (error) => {
+            console.error(error);
+            alert("Failed to send message. Try again.");
+          }
+        );
+      });
+    </script>
   </body>
 </html>

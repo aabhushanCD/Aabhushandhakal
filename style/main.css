@@ -29,7 +29,8 @@ h2 {
   color: var(--dark);
 }
 
-button, a {
+button,
+a {
   cursor: pointer;
   text-decoration: none;
 }
@@ -46,4 +47,108 @@ button, a {
 
 .ctaBtn:hover {
   background: var(--dark);
+}
+
+.profileLogo a {
+  display: flex;
+}
+
+/* MOBILE RESPONSIVE STYLING */
+
+/* For tablets and mobile screens */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    height: 8rem;
+  }
+
+  nav.allLinkBtn {
+    display: flex;
+    gap: 0px;
+    margin-top: 100px;
+  }
+  nav.allLinkBtn #home {
+    display: none;
+  }
+  .profileLogo a p {
+    display: block;
+    color: rgb(15, 158, 194);
+    padding: 11px;
+  }
+  .heroSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroPhoto img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+  }
+
+  .heroContent h1 {
+    font-size: 1.8rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .projectsSection .projectCards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .projectCard {
+    padding: 15px;
+  }
+
+  .contactSection form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+}
+
+/* For mobile phones specifically */
+@media (max-width: 600px) {
+  .heroContent h1 {
+    font-size: 1.5rem;
+  }
+
+  .heroContent p {
+    font-size: 0.9rem;
+  }
+
+  .projectCard h3 {
+    font-size: 1.2rem;
+  }
+
+  .projectCard p {
+    font-size: 0.9rem;
+  }
+
+  header .profileLogo img {
+    width: 80px;
+  }
+
+  nav.allLinkBtn a {
+    font-size: 0.9rem;
+  }
+
+  .ctaBtn {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+  }
 }
