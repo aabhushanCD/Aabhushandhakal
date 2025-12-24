@@ -1,6 +1,6 @@
 #Hero {
   background: var(--light);
-  height: 100vh; /* Full screen */
+  min-height: 100vh; /* Full screen */
   display: flex;
   align-items: center;
   justify-content: center;

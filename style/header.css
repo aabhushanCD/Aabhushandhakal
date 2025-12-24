@@ -17,13 +17,23 @@ header {
   background: var(--teal);
 }
 
-.allLinkBtn a {
+.allLinkBtn > a {
   color: var(--light);
   margin-left: 20px;
   font-weight: 500;
   transition: color 0.3s;
 }
 
-.allLinkBtn a:hover {
+.allLinkBtn > a:hover {
   color: var(--teal);
+}
+
+@media (max-width: 768px) {
+  .profileLogo {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
 }
